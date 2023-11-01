@@ -1,4 +1,4 @@
-# Conecta+
+# Conect+
 
 ### Descrição do Projeto
 
