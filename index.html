@@ -1,49 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
-    <link rel="stylesheet" href="style.css">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<!------------------LIght BOx for Gallery-------------->
-    <link rel="stylesheet" href="lightbox.min.css">
-    <script type="text/javascript" src="lightbox-plus-jquery.min.js"></script>
-<!------------------LIght BOx for Gallery-------------->
-    <title>Puc Campinas</title>
+        <!-- Referencia a pasta CSS -->
+        <link rel="stylesheet" type="text/css" href="css/login.css">
+        <!-- Referencia a pasta JS -->
+        <script src="js/login.js"></script>
+        <!-- Bootstrap -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  
+         <title>Login</title>
 
-</head>
+    </head>
 
-<body>
-    <!--Barra de navegação: Home, Prova, Monitorias, Provas-->
-    <nav class="navbar navbar-expand-md navbar-dark mb-4" style="background-color:#003383">
-        <a href="index.html" class="navbar-brand"><img src="img/PUC_Campinas.png" alt="logo" class="img-fluid" width="120px" height="140px"></a>
+    <body>
+        <!-- Bootstrap -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  
 
-        <h5 style="color: #ffff"> Conect+</h5>
+        <div class="container">
+            <div class="container-login">
+                <div class="login-form" style="margin: 0 auto; margin-left: 17.8%; margin-top: 20px;">
+                    <form>
+                        <span class="login-form-title">
+                            Faça o Login 
+                        </span>
+                        
 
-        <button class="navbar-toggler" data-toggle="collapse" data-target="#responsive"><span class="navbar-toggler-icon"></span></button>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email">
+                        </div>
+                        <div class="mb-3">
+                            <label for="password" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="password">
+                        </div>
 
-
-        <div class="collapse navbar-collapse" id="responsive">
-            <ul class="navbar-nav mr-auto text-capitalize">
-                <h5 class="nav-item"><a href="index.html" class="nav-link active">Home</a></h5>
-                <h5 class="nav-item"><a href="conteudo.html" class="nav-link">Conteúdos</a></h5>
-                <h5 class="nav-item"><a href="monitoria.html" class="nav-link" data-toggle="modal">Monitorias</a></h5>
-                <h5 class="nav-item"><a href="perfil.html" class="nav-link">Perfil</a></h5>
-
-            </ul>
-
-            <form action="" class="form-inline ml-auto d-none d-md-block">
-                <input type="text" name="search" id="search" placeholder="Search" class="form-control form-control-sm">
-            </form>
-            <a href="notification.html" class="text-decoration-none" style="color:#CBE4F2;font-size:22px;"><i class="far fa-bell ml-3 d-none d-md-block"></i></a>
-            <img src="img/avatar-dhg.png" alt="" class="rounded-circle ml-3 d-none d-md-block" width="32px" height="32px">
+                        <button type="submit" onclick="logar(); return false" style="width: 100%; background-color: #0848ac;" class="btn btn-primary">LOGIN</button>
+                    </form>
+                </div>
+                <img src="img/logo_puc.png" width="400" class="imagem-login"/>
+            </div>
         </div>
-    </nav>
 
-    <h1>Home</h1>
-</body>
+        <div></div>
+
+
+    </body>
+
 </html>
