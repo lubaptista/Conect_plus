@@ -1,0 +1,84 @@
+:root {
+  --vermelho: #d9042b;
+  --vinho: #93050d;
+  --azul-claro: #0848ac;
+  --azul: #033e8c;
+  --azul-escuro: #003383;
+  --azul-dark: #194073;
+  --amarelo-claro: #f2cb05;
+  --amarelo: #f2d06b;
+  --amarelo-escuro: #ffaa01;
+  --preto: #0d0d0d;
+}
+
+/*
+Formatacoes
+*/
+
+body {
+  font-family: Tahoma, sans-serif;
+}
+
+h1{
+  text-align: center;
+    font-size: 22pt;
+}
+
+h2{
+  text-align: center;
+    margin-bottom: 20px;
+    font-size: 15px;
+    font-family:Verdana;
+}
+
+h3{
+  font-size: 18px;
+}
+
+.container{
+  max-width: 1000px;
+}
+
+.card {
+  position: relative;
+  display: flex;
+  height: 120px;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  margin-bottom: 12px;
+  border: 1px solid #ccc;
+  border-radius: 0.375rem;
+  padding: 25px;
+  text-align: center;
+  align-items: center;
+  align-items: center;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  align-items: center;
+  justify-content: center;
+}
+.modal-content {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.btn.btn-dark{
+  width: 200px;
+  font-size: 13px;
+  bottom: 10px;
+  margin-top: auto;
+  right: 10px;
+  padding-right: .5rem;
+  padding-top: .25rem;
+}
+  

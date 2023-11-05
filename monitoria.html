@@ -7,7 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
+    
 
 <!------------------LIght BOx for Gallery-------------->
     <link rel="stylesheet" href="lightbox.min.css">
@@ -18,29 +19,256 @@
 </head>
 
 <body>
-    <!--Barra de navegação: Home, Prova, Monitorias, Provas-->
-    <nav class="navbar navbar-expand-md navbar-dark mb-4" style="background-color:#003383">
-        <a href="index.html" class="navbar-brand"><img src="img/logo_conect.png" alt="logo" class="img-fluid" width="145px" height="165px"></a>
+  <!--Barra de navegação: Home, Prova, Monitorias, Provas-->
+  <nav class="navbar navbar-expand-md navbar-dark mb-4" style="background-color:#003383">
+      <a href="index.html" class="navbar-brand"><img src="img/logo_conect.png" alt="logo" class="img-fluid" width="145px" height="165px"></a>
 
-        <button class="navbar-toggler" data-toggle="collapse" data-target="#responsive"><span class="navbar-toggler-icon"></span></button>
+      <button class="navbar-toggler" data-toggle="collapse" data-target="#responsive"><span class="navbar-toggler-icon"></span></button>
 
-        <div class="collapse navbar-collapse" id="responsive">
-            <ul class="navbar-nav mr-auto text-capitalize">
-                <h5 class="nav-item"><a href="index.html" class="nav-link">Home</a></h5>
-                <h5 class="nav-item"><a href="conteudo.html" class="nav-link">Conteúdos</a></h5>
-                <h5 class="nav-item"><a href="monitoria.html" class="nav-link active" data-toggle="modal">Monitorias</a></h5>
-                <h5 class="nav-item"><a href="perfil.html" class="nav-link">Perfil</a></h5>
+      <div class="collapse navbar-collapse" id="responsive">
+          <ul class="navbar-nav mr-auto text-capitalize">
+              <h5 class="nav-item"><a href="index.html" class="nav-link">Home</a></h5>
+              <h5 class="nav-item"><a href="conteudo.html" class="nav-link">Conteúdos</a></h5>
+              <h5 class="nav-item"><a href="monitoria.html" class="nav-link active" data-toggle="modal">Monitorias</a></h5>
+              <h5 class="nav-item"><a href="perfil.html" class="nav-link">Perfil</a></h5>
 
-            </ul>
+          </ul>
 
-            <form action="" class="form-inline ml-auto d-none d-md-block">
-                <input type="text" name="search" id="search" placeholder="Search" class="form-control form-control-sm">
-            </form>
-            <a href="notification.html" class="text-decoration-none" style="color:#CBE4F2;font-size:22px;"><i class="far fa-bell ml-3 d-none d-md-block"></i></a> 
-            <img src="img/avatar-dhg.png" alt="" class="rounded-circle ml-3 d-none d-md-block" width="32px" height="32px">
+          <form action="" class="form-inline ml-auto d-none d-md-block">
+              <input type="text" name="search" id="search" placeholder="Search" class="form-control form-control-sm">
+          </form>
+          <a href="notification.html" class="text-decoration-none" style="color:#CBE4F2;font-size:22px;"><i class="far fa-bell ml-3 d-none d-md-block"></i></a> 
+          <img src="img/avatar-dhg.png" alt="" class="rounded-circle ml-3 d-none d-md-block" width="32px" height="32px">
+      </div>
+  </nav>
+
+  <h1>Monitoria</h1>
+  <ul id="monitorias-list"></ul>
+
+  <div class="subtitulo">
+      <h2>Verifique se a monitoria está disponível, qual o monitor, o horário e sala.</h2>
+  </div>
+
+  <div class="container">
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-3">
+      <div class="col">
+        <img src="img/calculo1.jpg" class="card-img-top" width="200" alt="Calculo 1">
+        <div class="card shadow-sm h-90">
+          <h3>Cálculo 1</h3>
+          <button class="btn btn-dark" data-toggle="modal" data-target="#staticBackdrop">Mostrar Descrição</button>
         </div>
-    </nav>
+      </div>
+      <div class="col">
+        <img src="img/calculo2.jpg" width="150" class="card-img-top" alt="Calculo 2">
+        <div class="card shadow-sm h-250">
+          <h3>Cálculo 2</h3>
+          <button class="btn btn-dark" data-toggle="modal" data-target="#staticBackdrop">Mostrar Descrição</button>
+        </div>
+      </div>
+      <div class="col">
+        <img src="img/fisicadomovimento.jpg" width="150" class="card-img-top" alt="Fisica do Movimento">
+        <div class="card shadow-sm h-90">
+          <h3>Física do Movimento</h3>
+          <button class="btn btn-dark" data-toggle="modal" data-target="#staticBackdrop">Mostrar Descrição</button>
+        </div>
+      </div>
+      <div class="col">
+        <img src="img/fisicadoeletromag.jpg" width="150" class="card-img-top" alt="Física do Eletromagnetismo e Eletricidade">
+        <div class="card shadow-sm h-90">
+          <h3>Física do Eletromagnetismo e Eletricidade</h3>
+          <button class="btn btn-dark" data-toggle="modal" data-target="#staticBackdrop">Mostrar Descrição</button>
+        </div>
+      </div>
+      <div class="col">
+        <img src="img/organizacaodesis.jpg" width="150" class="card-img-top" alt="Organização de Sistemas Computacionais">
+        <div class="card shadow-sm h-90">
+          <h3>Organização de Sistemas Computacionais</h3>
+          <button class="btn btn-dark" data-toggle="modal" data-target="#staticBackdrop">Mostrar Descrição</button>
+        </div>
+      </div>
+      <div class="col">
+        <img src="img/mecanicadossolidos.jpg" width="150" class="card-img-top" alt="Mecânica dos Sólidos">
+        <div class="card shadow-sm h-90">
+          <h3>Mecânica dos Sólidos</h3>
+          <button class="btn btn-dark" data-toggle="modal" data-target="#staticBackdrop">Mostrar Descrição</button>
+        </div>
+      </div>
+      <div class="col">
+        <img src="img/mecanicadosfluidos.jpg" width="150" class="card-img-top" alt="Mecânica dos Fluidos">
+        <div class="card shadow-sm h-90">
+          <h3>Mecânica dos Fluidos</h3>
+          <button class="btn btn-dark" data-toggle="modal" data-target="#staticBackdrop">Mostrar Descrição</button>
+        </div>
+      </div>
+      <div class="col">
+        <img src="img/desenhosgraf.jpg" width="150" class="card-img-top" alt="Desenho Gráfico">
+        <div class="card shadow-sm h-90">
+          <h3>Desenho Gráfico</h3>
+          <button class="btn btn-dark" data-toggle="modal" data-target="#staticBackdrop">Mostrar Descrição</button>
+        </div>
+      </div>
+      <div class="col">
+        <img src="img/estruturadedados.jpg" width="150" class="card-img-top" alt="Estrutura de Dados">
+        <div class="card shadow-sm h-90">
+          <h3>Estrutura de Dados</h3>
+          <button class="btn btn-dark" data-toggle="modal" data-target="#staticBackdrop">Mostrar Descrição</button>
+        </div>
+      </div>
+      <div class="col">
+        <img src="img/redesdecomp.jpg" width="150" class="card-img-top" alt="Redes Computacionais">
+        <div class="card shadow-sm h-90">
+          <h3>Redes Computacionais</h3>
+          <button class="btn btn-dark" data-toggle="modal" data-target="#staticBackdrop">Mostrar Descrição</button>
+        </div>
+      </div>
+      <div class="col">
+        <img src="img/estatistica.jpg" width="150" class="card-img-top" alt="Estatistica">
+        <div class="card shadow-sm h-90">
+          <h3>Estatistica</h3>
+          <button class="btn btn-dark" data-toggle="modal" data-target="#staticBackdrop">Mostrar Descrição</button>
+        </div>
+      </div>
+      <div class="col">
+        <img src="img/desenvolvimentoweb.jpg" class="card-img-top" width="150" alt="Desenvolvimento Web">
+        <div class="card shadow-sm h-90">
+          <h3>Desenvolvimento Web</h3>
+          <button class="btn btn-dark" data-toggle="modal" data-target="#staticBackdrop">Mostrar Descrição</button>
+        </div>
+      </div>
+    </div>
+  </div>
 
-    <h1>Monitoria</h1>
+  <div class="modal" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Informações</h5>
+          <button type="button" class="bi bi-x-circle" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <p id="materia"></p>
+            <p id="monitor_ativo"></p>
+            <p id="nome_monitor"></p>
+            <p id="sala"></p>
+            <p id="horario"></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const cards = document.querySelectorAll('.card');
+    const modal = document.querySelector('.modal');
+    const materia = document.getElementById('materia');
+    const monitor_ativo = document.getElementById('monitor_ativo');
+    const nome_monitor = document.getElementById('nome_monitor');
+    const sala = document.getElementById('sala');
+    const horario = document.getElementById('horario');
+
+    cards.forEach((card, index) => {
+        const button = card.querySelector('.btn.btn-dark');
+        button.addEventListener('click', () => {
+            const data = [
+                {
+                    "materia": "Calculo 1",
+                    "monitor_ativo": true,
+                    "nome_monitor": "Alberto Siqueira",
+                    "sala": "H15 - Sala 101",
+                    "horario": "Segunda-feira, 10:00-12:00"
+                },
+                {
+                  "materia": "Calculo 2",
+                  "monitor_ativo": true,
+                  "nome_monitor": "Frederico Lopes",
+                  "sala": "H15 - Sala 201",
+                  "horario": "Segunda-feira, 15:00-18:00"
+                },
+                {
+                    "materia": "Física do Movimento",
+                    "monitor_ativo": false,
+                    "nome_monitor": "Maria Valentina",
+                    "sala": "CTA - Sala 203",
+                    "horario": "Quarta-feira, 14:00-16:00"
+                },
+                {
+                  "materia": "Física do Eletromagnetismo e Eletricidade",
+                  "monitor_ativo": true,
+                  "nome_monitor": "Gustavo Martins",
+                  "sala": "H15 - Sala 11",
+                  "horario": "Segunda-feira, 14:00-16:00"
+                },
+                {
+                  "materia": "Organização de Sistemas Computacionais",
+                  "monitor_ativo": true,
+                  "nome_monitor": "Raquel Alves Ribeiro",
+                  "sala": "H15 - Sala 04",
+                  "horario": "Segunda-feira, 08:00-10:00"
+                },
+                {
+                  "materia": "Mecânica dos Sólidos",
+                  "monitor_ativo": false,
+                  "nome_monitor": "Mariana Silva Santos",
+                  "sala": "CTA - Sala 203",
+                  "horario": "Sexta-feira, 16:00-18:00"
+                },
+                {
+                  "materia": "Mecânica dos Fluidos",
+                  "monitor_ativo": true,
+                  "nome_monitor": "Carlos Eduardo Pereira",
+                  "sala": "H08 - Sala 91",
+                  "horario": "Quinta-feira, 12:00-14:00"
+                },
+                {
+                  "materia": "Desenhos Gráficos",
+                  "monitor_ativo": true,
+                  "nome_monitor": "Juliana Almeida Costa",
+                  "sala": "H15 - Sala 02",
+                  "horario": "Quarta-feira, 15:00-18:00"
+                },
+                {
+                  "materia": "Estrutura de Dados",
+                  "monitor_ativo": true,
+                  "nome_monitor": "Lavinia Jordão",
+                  "sala": "H15 - Sala 04",
+                  "horario": "Quarta-feira, 14:00-16:00"
+                },  
+                {
+                  "materia": "Redes Computacionais",
+                  "monitor_ativo": true,
+                  "nome_monitor": "Luiz Felipe Mendonça",
+                  "sala": "CTB - Sala 58",
+                  "horario": "Terça-feira, 14:00-16:00"
+                }, 
+                {
+                  "materia": "Estatistica",
+                  "monitor_ativo": true,
+                  "nome_monitor": "André Santos Pereira",
+                  "sala": "CTA - Sala 107",
+                  "horario": "Quarta-feira, 19:00-21:00"
+                }, 
+                {
+                  "materia": "Desenvolvimento Web",
+                  "monitor_ativo": true,
+                  "nome_monitor": "Isabela Fernandes Rocha",
+                  "sala": "H15 - Sala 102",
+                  "horario": "Quarta-feira, 17:00-19:00"
+                }                
+              ];
+
+            const cardData = data[index];
+            materia.textContent = `Matéria: ${cardData.materia}`;
+            monitor_ativo.textContent = `Monitor Ativo: ${cardData.monitor_ativo ? 'Sim' : 'Não'}`;
+            nome_monitor.textContent = `Nome do Monitor: ${cardData.nome_monitor}`;
+            sala.textContent = `Sala: ${cardData.sala}`;
+            horario.textContent = `Horário: ${cardData.horario}`;
+            modal.style.display = 'block';
+        });
+    });
+
+    modal.addEventListener('click', () => {
+        modal.style.display = 'none';
+    });
+  </script>
+
 </body>
 </html>
