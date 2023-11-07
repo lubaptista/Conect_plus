@@ -1,3 +1,4 @@
+
 function logar()
 {
     var email = document.getElementById("email");
