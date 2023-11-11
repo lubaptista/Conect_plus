@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Site de Postagens</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+      .postarimagem { 
+        max-width: 200px; /* Largura máxima */
+        height: auto;  /* Altura automática para manter a proporção */
+        margin: 10px;  /* Margem entre as imagens */
+        } 
+         
+      .modal {
+      display: none;
+      position: fixed;
+      z-index: 1;
+      padding-top: 100px;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      overflow: auto;
+      background-color: rgba(0,0,0,0.9);
+    }
+
+  /* Estilos para a imagem no modal */
+  .modal-image {
+    display: block;
+    margin: 0 auto;
+    max-width: 90%;
+    max-height: 90%;
+  }
+
+  /* Estilos para fechar o modal */
+  .close {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+  }
+  </style>
+  </head>
+  <body>
+
+    <div class="hero">
+      <div class="card">
+        <p>prova</p>
+        <input type="file" accept="image/jpeg, image/jpg, image/png" id="input-file" multiple>
+      </div>
+    </div>
+
+    <div id="image-container"></div> <!-- Contêiner para as imagens -->
+
+    <div id="modal" class="modal">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <img class="modal-image" id="modal-image">
+    </div>
+
+    <script>
+
+      // Função para abrir o modal e exibir a imagem
+  function openModal(imageSrc) {
+    const modal = document.getElementById("modal");
+    const modalImage = document.getElementById("modal-image");
+    modalImage.src = imageSrc;
+    modal.style.display = "block";
+  }
+
+  // Função para fechar o modal
+  function closeModal() {
+    const modal = document.getElementById("modal");
+    modal.style.display = "none";
+  }
+      let inputFile = document.getElementById("input-file");
+      let imageContainer = document.getElementById("image-container");
+
+      inputFile.onchange = function () {
+        for (let i = 0; i < inputFile.files.length; i++) {
+          const file = inputFile.files[i];
+          const image = document.createElement("img");
+          // image.src = URL.createObjectURL(file);
+          const imageURL = URL.createObjectURL(file);
+          image.src = imageURL;
+          image.className = "postarimagem";
+          // image.style.maxWidth = "200px"; // Definir largura máxima
+          // image.style.height = "auto"; // Altura automática para manter a proporção
+          // image.style.margin = "5px"; // Adicionar margem entre as imagens
+          image.addEventListener("click", function () {
+          openModal(imageURL);
+          });
+          imageContainer.appendChild(image);
+          
+        }
+        // Limpar o campo de arquivo para que você possa carregar mais imagens sem recarregar a página
+        inputFile.value = null;
+      };
+    </script>
+  </body>
+</html>
