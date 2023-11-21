@@ -32,13 +32,13 @@
 
 
   .imagemProva {
-    height: 350px;
+    height: 750px;
     /* border: 1px solid #000; */
-    width: 350px;
-    margin-right: 150px; /* Define uma margem de 10 pixels à direita da imagem */
+    width: 750px;
+    margin-right: 300px; /* Define uma margem de 10 pixels à direita da imagem */
     vertical-align: middle;
     border-radius: 5%;
-    margin-left: 80px;
+    margin-left: 150px;
 }
 
 .imagemMateria {
@@ -145,9 +145,9 @@
   }
 
 .box {
-    width: 200px;
-    height: 200px;
-    margin: 5px 10px;
+    width: 250px;
+    height: 250px;
+    margin: 50px 20px;
     padding: 10px;
     border: 1px solid #f2cb05;
     border-radius: 5%;
@@ -160,9 +160,9 @@
 }
 
 .box2 {
-  width: 200px;
-  height: 200px;
-  margin: 5px 10px;
+  width: 250px;
+  height: 250px;
+  margin: 50px 10px;
   padding: 10px;
   border: 1px solid #f2cb05;
   background-color: #082041;
@@ -172,13 +172,13 @@
   align-items: center;
   text-align: center;
   overflow: hidden;
-  margin-left: 57px;
+  margin-left: 240px;
 }
 
 .box1 {
     width: 250px;
     height: 220px;
-    margin: 5px 10px;
+    margin: 70px 10px;
     padding: 10px;
     border: 1px solid #194073;
     border-radius: 5%;
@@ -187,7 +187,25 @@
     align-items: center;
     text-align: center;
     overflow: hidden;
+    margin-right: 40px;
     /* background-color: ; */
+}
+
+.box3 {
+  width: 250px;
+  height: 220px;
+  margin: 50px 10px;
+  padding: 10px;
+  border: 1px solid #194073;
+  border-radius: 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  overflow: hidden;
+  margin-right: 40px;
+  margin-left: 240px;
+  /* background-color: ; */
 }
 
 .button1 {
@@ -202,8 +220,9 @@
   align-items: center;
   justify-content: center;
   text-align: center;
-  /* margin-bottom: 5px; */
-  margin-top: auto;
+  margin-bottom: 2px;
+  margin-top: 40px;
+
   border-radius: 5%;
   font-family: Tahoma, sans-serif;
 }
@@ -220,8 +239,9 @@
   align-items: center;
   justify-content: center;
   text-align: center;
-  /* margin-bottom: 5px; */
-  margin-top: auto;
+  margin-bottom: 2px;
+  margin-top: 40px;
+
   border-radius: 5%;
   font-family: Tahoma, sans-serif;
 }
@@ -231,7 +251,7 @@
     color: white;
     font-family: Tahoma, sans-serif;
     font-size: 15pt;
-    margin-top: 20px;
+    margin-top: 50px;
 }
 
 .text6 {
