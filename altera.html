@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- Bootstrap -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <!-- Referencia a pasta JS -->
+        <script src="js/altera.js"></script>
+
+
+    <!------------------LIght BOx for Gallery-------------->
+        <link rel="stylesheet" href="lightbox.min.css">
+        <script type="text/javascript" src="lightbox-plus-jquery.min.js"></script>
+    <!------------------LIght BOx for Gallery-------------->
+        <title>Puc Campinas</title>
+
+    </head>
+
+    <body>
+        <!-- Bootstrap -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+        <header>       
+            <!--Barra de navegação: Home, Prova, Monitorias, Provas-->
+            <nav class="navbar navbar-expand-md navbar-dark mb-4" style="background-color:#003383">
+                <a href="index.html" class="navbar-brand"><img src="img/logo_conect.png" alt="logo" class="img-fluid" width="145px" height="165px"></a>
+
+                <button class="navbar-toggler" data-toggle="collapse" data-target="#responsive"><span class="navbar-toggler-icon"></span></button>
+                
+                <div class="collapse navbar-collapse" id="responsive">
+                    <ul class="navbar-nav mr-auto text-capitalize">
+                        <h5 class="nav-item"><a href="home.html" class="nav-link">Home</a></h5>
+                        <h5 class="nav-item"><a href="conteudo.html" class="nav-link">Conteúdos</a></h5>
+                        <h5 class="nav-item"><a href="monitoria.html" class="nav-link" data-toggle="modal">Monitorias</a></h5>
+
+                    </ul>
+                    <div class="container" style="padding-left: 77%;">
+                        <div class="btn-group dropstart">
+                            <a href="#" id="imageDropdown" data-bs-toggle="dropdown">
+                                <img src="img/avatar-dhg.png" width="32px" height="32px" style="border-radius: 100%;">
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="perfil.html">Ver Perfil</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="index.html">Log Out</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header> 
+
+
+        <div class="container">
+            <div class="container-login">
+
+                <img src="img/avatar-dhg.png" width="300" class="imagem-cadastro"/>
+                <div class="cadastro-form" style="margin: 0 auto; margin-right: 10.8%; margin-top: 20px;">
+                    <form>
+                        <span class="login-form-title">
+                            Edite seu perfil:
+                        </span><br><br>
+                        
+                        
+                        <div class="mb-3">
+                            <label for="nomeC" class="form-label">Nome:</label>
+                            <input type="text" class="form-control" id="nomeC">
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="emailC" class="form-label">Email:</label>
+                            <input type="email" class="form-control" id="emailC">
+                        </div>
+                        
+                        <div class="mb-3">
+                            <label for="passwordC" class="form-label">Password:</label>
+                            <input type="password" class="form-control" id="passwordC">
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="descricaoC" class="form-label">Descrição:</label>
+                            <input type="text" class="form-control" id="descricaoC">
+                        </div> <br>
+
+                        <button type="submit" onclick="altera(); return false" style="width: 100%; background-color: #0848ac;" class="btn btn-primary">SALVAR</button>
+                        <div> <label> </label> </div>
+                        <button><a type="nav-item" style="width: 105%; background-color: #0848ac;" href="perfil.html" class="nav-link">Voltar para perfil</a></button>
+                    </form>
+                </div>
+                
+            </div>
+        </div>
+
+        
+
+    </body>
+
+</html>
